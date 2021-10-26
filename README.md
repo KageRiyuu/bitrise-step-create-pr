@@ -26,7 +26,7 @@ You need to pass these param, all are required:
 ## How to use this Step
 
 Add this in your bitrise.yml file and replace proper variables:
-
+```
 - git::https://github.com/EC-Mobile/bitrise-step-create-pr.git@main:
         title: PR Creator
         inputs:
@@ -40,3 +40,4 @@ Add this in your bitrise.yml file and replace proper variables:
         - BRANCH_TO: develop
         - BRANCH_FROM: <Variable>
         - TEAM_LEAD_GIT_NAME: <Variable>
+```

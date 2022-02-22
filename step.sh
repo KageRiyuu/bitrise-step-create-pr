@@ -23,7 +23,7 @@ echo "- Reviewer PR Input: ${REVIEWER_LIST}"
 
 echo "Calling bitbucket create PR API..."
 response=$(curl --location --request POST "${GIT_BASE_URL}/rest/api/1.0/projects/${GIT_PROJECT}/repos/${GIT_REPO}/pull-requests" \
---header "Authorization: Bearer ${ACCESS_TOKEN}" \
+--header "Authorization: Bearer ${GIT_ACCESS_TOKEN}" \
 --header 'Content-Type: application/json' \
 --data-raw "{
     \"title\": \"${PR_TITLE}\",

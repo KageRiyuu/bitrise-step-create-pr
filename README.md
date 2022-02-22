@@ -11,7 +11,7 @@ You need to pass these param, all are required:
 
 ### Secure Params:
 
-- GIT_ACCESS_TOKEN:                     You can create in your bitbucket account settings.
+- GIT_ACCESS_TOKEN:                                 You can create in your bitbucket account settings.
 
 ### Normal Params;
 - GIT_BASE_URL:                                     https://gitpub.mydomain.com

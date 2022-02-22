@@ -14,14 +14,17 @@ You need to pass these param, all are required:
 - GIT_ACCESS_TOKEN:                     You can create in your bitbucket account settings.
 
 ### Normal Params;
-- GIT_BASE_URL:                                    https://gitpub.mydomain.com
+- GIT_BASE_URL:                                     https://gitpub.mydomain.com
 - GIT_PROJECT:                                      My-MOBILE
-- GIT_REPO:                                            app-ios
-- PR_TITLE:                                             This is a Test PR
-- PR_DESCRIPTION:                               Created from bash script...
+- GIT_REPO:                                         app-ios
+- PR_TITLE:                                         This is a Test PR
+- PR_DESCRIPTION:                                   Created from bash script...
 - BRANCH_TO:                                        develop
-- BRANCH_FROM:                                  master
-- TEAM_LEAD_GIT_NAME:                     kage.ryu
+- BRANCH_FROM:                                      master
+- PR_REVIEWERS:                                     kage.ryu,ken.ryu
+
+### Output Params;
+- PR_LINK:                                          https://gitpub.mydomain.com/.../pullrequest/123
 
 ## How to use this Step
 
@@ -39,4 +42,4 @@ Add this in your bitrise.yml file and replace proper variables:
             code will not disturbe the develop branch.
         - BRANCH_TO: develop
         - BRANCH_FROM: <Variable>
-        - TEAM_LEAD_GIT_NAME: <Variable>
+        - PR_REVIEWERS: <Variable>

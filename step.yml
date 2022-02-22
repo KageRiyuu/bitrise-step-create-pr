@@ -157,10 +157,10 @@ inputs:
           https://docs.atlassian.com/bitbucket-server/rest/5.16.0/bitbucket-rest.html#idm8287391664
       is_required: true
 
-  - TEAM_LEAD_GIT_NAME: 
+  - PR_REVIEWERS: 
     opts:
-      title: Bitbucket User Name 
-      summary: This user will be added as a reviewer in the new PR.
+      title: Bitbucket User Names seperated by comma 
+      summary: These users will be added as a reviewers in the new PR.
       description: |
         This values will be passed as user in reviewers to the following API json body.
         This step uses bitbucket rest api V1.0, it expects your domain installed rest api.
